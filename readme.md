@@ -1,14 +1,10 @@
 # Flex Facade Container
 
 To install, all you need to do 
-is add the following to your composer.json file.
+is run the following command
 
 ```
-{
-	"require": {
-		"flex/facade":"dev-master"
-	}
-}
+sudo composer create-project projectname flex/facade -s dev
 ```
 
 Then. run `sudo composer install` and the 
@@ -16,8 +12,8 @@ Flex Facade Container will be installed!
 
 All of your classes/facade classes must be 
 autoloaded.  
-Inside `vendor/flex/facade/classes` and
- `vendor/flex/facade/facades` your classes will
+Inside `classes/` and
+ `facades/` your classes will
   automatically be autoloaded.
 
 ## Usage
