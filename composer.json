@@ -1,0 +1,20 @@
+{
+    "name": "flex/facade",
+    "description": "Flex's Facade class is the pre-cursor to the in-development Flex PHP Framework.  However, this Flex Facade package will allow you to have the beauty of static syntax, without the horrors of static methods.",
+    "authors": [
+        {
+            "name": "Elliot Anderson",
+            "email": "anderson.elliot3@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload":{
+        "classmap": [
+            "flex/src/Flex/Container/",
+            "flex/src/Flex/Facade"
+        ]
+    }
+}
