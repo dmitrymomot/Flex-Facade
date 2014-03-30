@@ -4,7 +4,7 @@ To install, all you need to do
 is run the following command
 
 ```
-sudo composer create-project projectname flex/facade -s dev
+sudo composer create-project flex/facade projectname -s dev
 ```
 
 Then. run `sudo composer install` and the 
