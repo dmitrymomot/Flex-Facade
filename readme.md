@@ -24,7 +24,7 @@ Inside `classes/` and
 $app = new Flex\Container;
 ```
 initiates the container class. Because Flex\Container implements ArrayAccess,
-we can now access any classes we put in here by doing $app['classname'] 
+we can now access any classes we put in here by doing `$app['classname']` 
 
 ### Creating the Class
 
@@ -49,6 +49,13 @@ $app->register('hello', function()
 	return new Classes\Hello;
 });
 ```
+
+This registers the `Classes\Hello` class inside the `$app['hello']` container accessor.  Now, if we run the following:
+```php
+$app['hello']->say();
+```
+you should see our `Hello, World!` message.
+
 ### Creating the Facade
 
 Now, we want to create a facade class, so we can access `$app['hello']` by using an Alias.
@@ -64,7 +71,7 @@ class Hello extends \Flex\Facade
 }
 ```
 
-This class, when called, will return $app['hello'], as defined in the service method we just created.
+This class, when called, will return `$app['hello']`, as defined in the service method we just created.
 
 ### Creating the Alias
 
